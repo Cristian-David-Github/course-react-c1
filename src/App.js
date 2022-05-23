@@ -1,23 +1,24 @@
 import logo from './logo.svg';
+import Header from './Header';
+import PersonalInformation from './PersonalInformation';
 import './App.css';
+import { Info } from "./Data.js";
+import SectionInfo from './SectionInfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <PersonalInformation
+        name={Info.personalData.name}
+        lastName={Info.personalData.lastname}
+        age={Info.personalData.age}
+        nationality={Info.personalData.nationality}
+        avatar={Info.personalData.avatar}
+      />
+      <SectionInfo items={Info.career}/>
+      <SectionInfo items={Info.education}/>
+      <SectionInfo bio={Info.bio}/>
     </div>
   );
 }
