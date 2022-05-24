@@ -9,7 +9,7 @@ const PersonalInformation = ({ name, lastName, nationality, age, avatar }) => {
         <p>Nationality: {nationality}</p>
       </div>
       <div>
-        <img className='imgAvatar' src={avatar} alt='profile picture' />
+        <img className='imgAvatar' src={avatar} alt='profile' />
       </div>
     </section>
   );

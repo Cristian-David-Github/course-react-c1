@@ -1,6 +1,6 @@
 import Bio from "./Bio";
-const SectionInfo = ({ items, bio }) => {
-  if (bio) {
+const SectionInfo = (props) => {
+  if (props.bio) {
     return (
       <section>
         <div className='sectionContainer'>
@@ -13,12 +13,14 @@ const SectionInfo = ({ items, bio }) => {
           </div>
           <div>
             <h2 className='subTittleStyle'>Biography</h2>
-            <Bio bio={bio} />
+            <Bio bio={props.bio} />
           </div>
         </div>
       </section>
     );
   } else {
+    let sectionTitle = props.career ? "Experience" : "Education";
+    let items = props.career ? props.career : props.education;
     return (
       <section>
         <div className='sectionContainer'>
@@ -30,10 +32,12 @@ const SectionInfo = ({ items, bio }) => {
             />
           </div>
           <div>
-            <h2 className='subTittleStyle'>Experience</h2>
+            <h2 className='subTittleStyle'>{sectionTitle}</h2>
             <ul className='liStyle'>
               {items.map((item) => (
-                <li key={item.id}>{item.info}</li>
+                <li key={item.id}>
+                  {item.occupation ? item.occupation : item.institute}
+                </li>
               ))}
             </ul>
           </div>
@@ -44,3 +48,4 @@ const SectionInfo = ({ items, bio }) => {
 };
 
 export default SectionInfo;
+//

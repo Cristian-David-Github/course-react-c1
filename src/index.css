@@ -36,7 +36,7 @@
 
 .ulStyle{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 48px;
   list-style: none;
   font-size: 18px;
