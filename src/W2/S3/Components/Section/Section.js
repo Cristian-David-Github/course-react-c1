@@ -23,7 +23,7 @@ const Section = ({ title, subTitle })=>{
                         text="Sign up with Apple" 
                         logo={logos.logo_apple}
                     />
-                    <div>
+                    <div className="orContainer">
                         <div>
                             <span>or</span>
                         </div>

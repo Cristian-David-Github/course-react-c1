@@ -1,7 +1,7 @@
 import "./Parent.css";
 import Section from "./Components/Section/Section";
 
-const Parent = ()=>{
+const ParentApp = ()=>{
     return (
         <div className="container">
             <Section/>
@@ -13,4 +13,4 @@ const Parent = ()=>{
     )
 }
 
-export default Parent;
+export default ParentApp;

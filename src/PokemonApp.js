@@ -3,7 +3,7 @@ import './App.css';
 import {pokemonData} from "./assets/data";
 import Navigation from './W2/S2/Navigation/Navigation';
 import PokemonCard from './W2/S2/PokemonCard/PokemonCard';
-function App() {
+function PokemonApp() {
   const [ pokemon, setPokemon ] = useState("Welcome to my pokemon Card")
   const arrOfKey = Object.keys(pokemonData);
   const changingView = ( param )=>{
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default PokemonApp;

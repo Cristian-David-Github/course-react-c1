@@ -3,7 +3,7 @@ import PersonalInformation from "./PersonalInformation";
 import SectionInfo from "./SectionInfo";
 import { Info } from "./Data";
 
-const Card = ()=>{
+const CardApp = ()=>{
     return (
         <div className="App">
           <Header/>
@@ -21,4 +21,4 @@ const Card = ()=>{
       );
 }
 
-export default Card;
+export default CardApp;
