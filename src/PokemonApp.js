@@ -7,7 +7,6 @@ function PokemonApp() {
   const [ pokemon, setPokemon ] = useState("Welcome to my pokemon Card")
   const arrOfKey = Object.keys(pokemonData);
   const changingView = ( param )=>{
-
     if(param === 0){
       setPokemon(<PokemonCard type={arrOfKey[param]} element={pokemonData.fire}/>)
     }else if(param === 1){
