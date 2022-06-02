@@ -3,13 +3,10 @@ import ChildOne from "./Components/ChildOne";
 import ChildTwo from "./Components/ChildTwo";
 
 class ParentCount extends React.Component{
-    constructor(){
-        super()
-        this.state = {
+        state = {
             number: 3
         };
-        this.addition = this.addition.bind(this);
-    };
+ 
 
     addition = ()=>{
         this.setState(prevState => {
@@ -30,6 +27,7 @@ class ParentCount extends React.Component{
     render(){
         return (
             <div>
+                <p>Parental Class Component</p>
                 <ChildOne count={this.state.number} adding={this.addition} sub={this.substraction}/>
                 <ChildTwo count={this.state.number} adding={this.addition} sub={this.substraction}/>
             </div>

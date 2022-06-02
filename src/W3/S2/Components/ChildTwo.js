@@ -2,11 +2,8 @@ import React, {Component} from "react";
 
 class ChildTwo extends Component {
 
-    constructor(props){
-        super(props)
-        this.state ={
-            result: 1
-        };
+   state ={
+        result: 1
     };
     
     addition = ()=>{
