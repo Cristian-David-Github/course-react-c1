@@ -2,27 +2,27 @@ import React, {Component} from "react";
 
 class ChildTwo extends Component {
 
-   state ={
-        result: 1
-    };
-    
-    addition = ()=>{
-        this.setState({ result: this.props.count})
-        this.props.adding()
+    state = {
+        value: 1
     }
 
-    substraction = ()=>{
-        this.setState({ result: this.props.count})
-        this.props.sub()
+    sumar = ()=>{
+        this.setState({ value: this.props.count}, ()=>{this.props.additionFn()})
+        
+    }
+
+    restar = ()=>{
+        this.setState({ value: this.props.count}, ()=>{this.props.substractionFn()})
+        
     }
 
     render(){ 
         return (
             <div>
                 <p>Component Child Two</p>
-                <h1>The count goes at: {this.state.result}</h1>
-                <button onClick={()=> this.addition()}>Add</button>
-                <button onClick={()=> this.substraction()}>Sub</button>
+                <h1>The count goes at: {this.state.value}</h1>
+                <button onClick={()=> this.sumar()}>Add</button>
+                <button onClick={()=> this.restar()}>Sub</button>
             </div>
         );
     };

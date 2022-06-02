@@ -1,27 +1,26 @@
 import React, {Component} from "react";
-
+// El componente solo se rendeiza cundo su estado es modificado.
 class ChildOne extends Component {
-    state ={
-            result: 1
-    };
 
-    addition = ()=>{
-        this.setState({ result: this.props.count})
-        this.props.adding()
+    state = {
+        value: 1
     }
 
-    substraction = ()=>{
-        this.setState({ result: this.props.count})
-        this.props.sub()
+    add = ()=>{
+        this.setState({ value: this.props.count}, ()=>{this.props.additionFn()})
+    }
+
+    sub = ()=>{
+        this.setState({ value: this.props.count}, ()=>{this.props.substractionFn()})
     }
 
     render(){
         return (
             <div>
                 <p>Component Child One</p>
-                <h1>The count goes at: {this.state.result}</h1>
-                <button onClick={()=> this.addition()}>Add</button>
-                <button onClick={()=> this.substraction()}>Sub</button>
+                <h1>The count goes at: {this.state.value}</h1>
+                <button onClick={()=> this.add()}>Add</button>
+                <button onClick={()=> this.sub()}>Sub</button>
             </div>
         );
     };

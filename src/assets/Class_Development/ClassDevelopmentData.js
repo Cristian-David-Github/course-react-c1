@@ -5,6 +5,7 @@ import ParentApp from "../../W2/S3/ParentApp";
 //Week 3 of Class
 import ParadigApp from "../../W3/S1/ParadigApp";
 import ParentCount from "../../W3/S2/ParentCount.js";
+import CounterMesa from "../../W3/S3/CounterMesa.js";
 export const ClassData = {
     week_one: [
         { id: 1, class_name: "Bienvenido a React", component:""}, 
@@ -18,6 +19,6 @@ export const ClassData = {
     week_three: [
         { id: 7, class_name: "Paradigmas de Estilo en React", component:ParadigApp},
         { id: 8, class_name: "Stateful Class Components", component:ParentCount},
-        { id: 9, class_name: "Clase de Repaso", component:""},
+        { id: 9, class_name: "Clase de Repaso", component: CounterMesa},
     ]
 }
