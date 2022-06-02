@@ -9,19 +9,11 @@ class ParentCount extends React.Component{
  
 
     addition = ()=>{
-        this.setState(prevState => {
-            return {
-                number: prevState.number + 1
-            };
-        });
+        this.setState(prevState => ({ number: prevState.number + 1}))
     };
 
     substraction = ()=>{
-        this.setState(prevState => {
-            return {
-                number: prevState.number - 1
-            };
-        });
+        this.setState(prevState => ({ number: prevState.number - 1}))
     };
 
     render(){
