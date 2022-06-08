@@ -9,6 +9,7 @@ import CounterMesa from "../../W3/S3/CounterMesa.js";
 //WEEK 4 OF CLASS (LIFE CYCLES)
 import LifeCycle from "../../W4/S1/LifeCycles";
 import FunCycle from "../../W4/S1/FunCycle";
+import FormApp from "../../W4/S2/FormApp";
 
 export const ClassData = {
   week_one: [
@@ -32,7 +33,7 @@ export const ClassData = {
   week_four: [
     { id: 10, class_name: "Life Cycle Methods Class", component: LifeCycle },
     { id: 11, class_name: "Life Cycle Methods Fn", component: FunCycle },
-    { id: 12, class_name: "Stateful Class Components", component: "" },
+    { id: 12, class_name: "Forms and Events", component: FormApp },
     { id: 13, class_name: "Clase de Repaso", component: "" },
   ],
 };
