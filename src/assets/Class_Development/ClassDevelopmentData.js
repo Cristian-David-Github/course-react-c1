@@ -10,6 +10,10 @@ import CounterMesa from "../../W3/S3/CounterMesa.js";
 import LifeCycle from "../../W4/S1/LifeCycles";
 import FunCycle from "../../W4/S1/FunCycle";
 import HomePage from "../../W4/S2_S3/HomePage";
+//WEEK 5 MIDTERM
+import MidTermExam from "../../W5/MidTermExam";
+import ApiCalls from "../../W5/S2/ApiCalls";
+import JavaScript from "../../W5/S3/JavaScript";
 
 export const ClassData = {
   week_one: [
@@ -34,5 +38,15 @@ export const ClassData = {
     { id: 10, class_name: "Life Cycle Methods Class", component: LifeCycle },
     { id: 11, class_name: "Life Cycle Methods Fn", component: FunCycle },
     { id: 12, class_name: "Forms and Events", component: HomePage}
+  ],
+  week_five: [
+    { id: 13, class_name: "MIDTERM", component: MidTermExam },
+    { id: 14, class_name: "Api Calls", component: ApiCalls },
+    { id: 15, class_name: "JavaScript Activity", component: JavaScript}
+  ],
+  week_six: [
+    { id: 13, class_name: "React Router P1", component: null},
+    { id: 14, class_name: "React Router P2", component: null },
+    { id: 15, class_name: "Practice Activity", component: null}
   ],
 };

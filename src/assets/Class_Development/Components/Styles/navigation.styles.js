@@ -10,6 +10,7 @@ export const BtnNav = styled.button`
     cursor: pointer;
     :focus{
         outline: none;
+        background-color: darkslateblue;
     }
     :hover{
         background-color: darkslateblue;
