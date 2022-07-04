@@ -14,7 +14,10 @@ import HomePage from "../../W4/S2_S3/HomePage";
 import MidTermExam from "../../W5/MidTermExam";
 import ApiCalls from "../../W5/S2/ApiCalls";
 import JavaScript from "../../W5/S3/JavaScript";
-
+//WEEK 6 ROUTER
+//WEEK7 REPASO Y EXAMEN
+import RepasoClass from "../../W7/RepasoClass";
+import RepasoFunction from "../../W7/RepasoFunction";
 export const ClassData = {
   week_one: [
     { id: 1, class_name: "Bienvenido a React", component: "" },
@@ -48,5 +51,10 @@ export const ClassData = {
     { id: 13, class_name: "React Router P1", component: null},
     { id: 14, class_name: "React Router P2", component: null },
     { id: 15, class_name: "Practice Activity", component: null}
+  ],
+  week_seven: [
+    { id: 16, class_name: "Repaso Previo a Class", component: RepasoClass},
+    { id: 17, class_name: "Repaso Previo Function", component: RepasoFunction },
+    { id: 18, class_name: "Practice Activity", component: null}
   ],
 };
